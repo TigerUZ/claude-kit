@@ -21,4 +21,6 @@ Changed files:
 4. Output one table: `# | severity | area | path:line | issue | proposed fix | confidence`. Then: verdict (SHIP / FIX FIRST / RETHINK) and the 3 most important fixes.
 5. Ask which findings to fix. Fix the chosen ones one commit each, then rerun typecheck and tests.
 
+Subagent names: as a plugin these agents are `tiger-kit:<name>` (e.g. `tiger-kit:researcher`); with install.sh they are the bare `<name>`. Use whichever form your agent list shows.
+
 For a quick single-dimension pass, the built-in `/code-review` and `/security-review` are cheaper; this command is the full gate before merging or deploying.

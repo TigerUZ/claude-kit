@@ -1,0 +1,16 @@
+{
+  "name": "tiger",
+  "description": "Khojiakbar's Claude Code kit for web / SaaS / Telegram / mobile / AI / video work",
+  "owner": {
+    "name": "Khojiakbar",
+    "url": "https://github.com/TigerUZ"
+  },
+  "plugins": [
+    {
+      "name": "tiger-kit",
+      "source": "./plugins/tiger-kit",
+      "description": "14 subagents, 14 skills and 5 safety/format/context hooks for TypeScript, Supabase, Telegram, Expo, AI and video projects",
+      "category": "development"
+    }
+  ]
+}

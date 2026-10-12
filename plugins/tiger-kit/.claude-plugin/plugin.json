@@ -1,0 +1,12 @@
+{
+  "name": "tiger-kit",
+  "displayName": "Tiger Kit",
+  "description": "Subagents, skills and hooks for web / SaaS / Telegram / mobile / AI / video projects: architect, reviewers, engineers, /kickoff /fix /ship /audit and more, plus bash/file guards, auto-format and session context",
+  "author": {
+    "name": "Khojiakbar",
+    "url": "https://github.com/TigerUZ"
+  },
+  "homepage": "https://github.com/TigerUZ/claude-kit",
+  "repository": "https://github.com/TigerUZ/claude-kit",
+  "keywords": ["typescript", "nextjs", "supabase", "telegram", "expo", "ai", "ffmpeg", "hooks", "subagents"]
+}

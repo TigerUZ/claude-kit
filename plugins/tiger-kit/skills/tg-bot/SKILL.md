@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 Bot: $ARGUMENTS
 
-Use the `telegram-engineer` subagent's rules (read ~/.claude/agents/telegram-engineer.md if you are not running as it).
+Use the `telegram-engineer` subagent's rules (`tiger-kit:telegram-engineer` when installed as a plugin). If you are not running as it, read its definition: `${CLAUDE_PLUGIN_ROOT}/agents/telegram-engineer.md` (plugin) or `~/.claude/agents/telegram-engineer.md` (install.sh).
 
 1. **Clarify (max 5 questions):** core user flows; languages (default ru/uz/en); payments (Stars for digital goods, or external for physical); admin needs (stats, broadcast, moderation); hosting (serverless webhook vs always-on). Skip questions already answered in CLAUDE.md/PRD.
 2. **Verify current APIs** of grammY and the plugins you will use (Context7 or docs) - do not rely on memory for plugin signatures.

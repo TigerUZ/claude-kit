@@ -9,7 +9,7 @@ Landing for: $ARGUMENTS
 
 1. **Brief** (ask what is missing, max 5 questions): audience, the one action (buy / book / join waitlist / open bot), offer and price, proof (numbers, testimonials, logos - only real ones), languages (ru/uz/en), brand colours/fonts if any.
 2. **Copy first.** Write `content/landing.<lang>.ts`: hero (outcome-focused headline <= 9 words, subhead, CTA), problem, solution/how it works (3 steps), features as benefits, proof, pricing, FAQ (6-8 real objections), final CTA. No lorem ipsum, no invented testimonials.
-3. **Design direction.** Use the frontend-design skill / `ui-designer` subagent: choose a distinctive direction (type pairing, one accent colour, layout rhythm), expressed as Tailwind theme tokens.
+3. **Design direction.** Use the frontend-design skill / `ui-designer` subagent (`tiger-kit:ui-designer` when installed as a plugin): choose a distinctive direction (type pairing, one accent colour, layout rhythm), expressed as Tailwind theme tokens.
 4. **Build** sections as components; Server Components only; images via next/image; no heavy animation libraries unless justified.
 5. **Lead capture:** form -> server action (Zod + honeypot + rate limit) -> store in DB and notify a Telegram chat via the Bot API; or a `t.me/<bot>?start=<utm>` deep link CTA.
 6. **SEO/analytics:** metadata + OG image (next/og), hreflang for languages, sitemap/robots, JSON-LD (Organization/Product/FAQ), PostHog or Plausible events on CTA clicks.
