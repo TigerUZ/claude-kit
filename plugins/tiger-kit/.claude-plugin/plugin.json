@@ -8,5 +8,6 @@
   },
   "homepage": "https://github.com/TigerUZ/claude-kit",
   "repository": "https://github.com/TigerUZ/claude-kit",
+  "license": "MIT",
   "keywords": ["typescript", "nextjs", "supabase", "telegram", "expo", "ai", "ffmpeg", "hooks", "subagents"]
 }
