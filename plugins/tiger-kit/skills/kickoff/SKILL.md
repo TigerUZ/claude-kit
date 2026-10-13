@@ -17,5 +17,7 @@ Goal of this command: decision documents, not code. Keep every document short an
 3. **PRD.** Write `docs/PRD.md`: problem, user, value proposition (1 sentence), v1 scope (Must / Should / Won't), non-goals, success metric for the first 30 days, pricing hypothesis.
 4. **Architecture.** Delegate to `architect`: `docs/ARCHITECTURE.md` using the global default stack unless something forces otherwise.
 5. **Plan.** Write `docs/PLAN.md`: milestones M0 (skeleton deployed) ... Mn; each milestone fits in one working day, has checkbox tasks and a runnable acceptance check (command, URL or bot message).
-6. **Project memory.** Create `CLAUDE.md` from `~/.claude/templates/project/CLAUDE.md`, filled in for this project (keep it under 120 lines). Copy `~/.claude/templates/project/.claude/` into the repo if it is not there.
+6. **Project memory.** Create `CLAUDE.md` from the project template's `CLAUDE.md`, filled in for this project (keep it under 120 lines). Copy the template's `.claude/` into the repo if it is not there. Template location: `${CLAUDE_PLUGIN_ROOT}/templates/project/` when installed as a plugin, otherwise `~/.claude/templates/project/`.
 7. **Stop.** Show a 10-line summary, the riskiest assumption, and the exact first command to run for M0. Do not scaffold until I say go.
+
+Subagent names: as a plugin these agents are `tiger-kit:<name>` (e.g. `tiger-kit:researcher`); with install.sh they are the bare `<name>`. Use whichever form your agent list shows.

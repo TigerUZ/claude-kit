@@ -1,13 +1,13 @@
 ---
 name: research
-description: Research a technical question (library choice, API integration, approach, pricing) in a background researcher agent and save a sourced brief to docs/research/.
+description: Research a technical question (library choice, API integration, approach, pricing) in a researcher subagent and save a sourced brief to docs/research/.
 argument-hint: "<question>"
 disable-model-invocation: true
-context: fork
-agent: researcher
 ---
 
 Research question: $ARGUMENTS
+
+Delegate the whole task below to the `researcher` subagent (`tiger-kit:researcher` when installed as a plugin; use whichever your agent list shows), passing the question and these instructions verbatim. Do not research in the main context. When it returns, show its recommendation and the file path.
 
 Project context: read `CLAUDE.md` and `docs/ARCHITECTURE.md` if they exist, so recommendations fit the existing stack.
 
